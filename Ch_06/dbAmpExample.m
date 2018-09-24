@@ -10,6 +10,9 @@ sw2 = dbAmpChange(sw1,6);
 sw3 = dbAmpChange(sw1,-6);
 
 % Plot the result
+Ts = 1/Fs;
+N = length(sw1);
+t = [0:N-1]*Ts; t=t(:);
 plot(t,sw1,'.',t,sw2,t,sw3,'--');
 xlabel('Time (sec.)');
 ylabel('Amplitude');
