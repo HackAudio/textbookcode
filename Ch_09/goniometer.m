@@ -21,8 +21,8 @@
 % See also GONIOMETEREXAMPLE
 function goniometer(in)
 N = length(in);
-x = size(N,1);
-y = size(N,1);
+x = zeros(N,1);
+y = zeros(N,1);
 
 for n = 1:N
     L = in(n,1);
