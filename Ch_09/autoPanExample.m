@@ -16,7 +16,7 @@ f = 1; % Frequency of panning LFO
 
 % Generate sine wave LFO based on f and t
 panValue = 100*sin(2*pi*f*t);
-panType = 2; % Start with panType = 2, but try 1,2,3,4
+panType = 2; % Start with panType = 2, but try 1,2,3
 
 % Run pan function
 [out] = pan(in,panValue,panType);

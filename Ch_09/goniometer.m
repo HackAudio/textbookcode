@@ -65,7 +65,7 @@ yM = 0.96;
 txtM = 'M';
 text(xM,yM,txtM,'Color',[0.75 0.75 0.75]);
 
-%Mid
+%Side
 xS = -0.98;
 yS = 0;
 txtS = 'S';
