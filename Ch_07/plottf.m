@@ -23,6 +23,9 @@ X=(2/N)*fft(x,len);        % do DFT/FFT
 
 f= [0:len-1]*(Fs/len);
 
+% Ensure there will be no values of -Inf dB
+% by making the minimum value = -120 dB
+X(abs(X)<0.000001) = 0.000001;
 
 subplot(2,1,2);
 semilogx(f,20*log10(abs(X))); axis([20 20000 -60 4]);
